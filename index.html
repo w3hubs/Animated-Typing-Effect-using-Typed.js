@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Animated Typing Effect using Typed.js</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Animated Typing Effect using Typed.js">
+    <meta name="author" content="w3hubs.com">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300i,400,700&display=swap" rel="stylesheet">
+    <style type="text/css">
+      body{
+      background-color: #f0f2f5;
+      font-family: "Nunito Sans";
+      margin: 0;
+      }
+      .box {
+      height: 100vh;
+      width: 100%;
+      font-size: 30px;
+      font-weight: bold;
+      font-family: Nunito Sans;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      }
+      .box h1 {
+      text-align: center;
+      font-size: 80px;
+      color: #000;
+      margin: 0;
+      font-family: Nunito Sans;
+      font-weight: 900;
+      text-transform: uppercase;
+      }
+      .element{
+      color: #1f6f8b;
+      }
+      .typed-cursor {
+      color: #556052;
+      }
+      @media(max-width: 575px){
+      .box h1 {font-size: 28px;}
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <h1>I am  <span class="element"></span></h1>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script type="text/javascript">
+      var options = {
+        strings: ['Designer.', 'Developer.','Expert.'],
+        typeSpeed: 80,
+        	backSpeed: 70,
+      		
+      		loop: true,
+      };
+      
+      var typed = new Typed('.element', options);
+      
+    </script>
+  </body>
+</html>
